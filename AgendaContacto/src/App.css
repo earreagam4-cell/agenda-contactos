@@ -1,0 +1,268 @@
+body {
+
+  background-color: #f5f7fa;
+
+  font-family: sans-serif;
+
+  margin: 0;
+
+  padding: 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  min-height: 100vh;
+
+  box-sizing: border-box;
+
+}
+
+
+
+/* El contenedor principal ahora será más ancho para que quepan las dos columnas */
+
+.app-container {
+
+  width: 100%;
+
+  max-width: 10000px; /* Aumentamos el ancho máximo */
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  box-sizing: border-box;
+
+}
+
+
+
+h1 {
+
+  text-align: center;
+
+  color: #2c3e50;
+
+  margin-top: 0;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+/* ==========================================
+
+   ESTRUCTURA DE DOS COLUMNAS
+
+   ========================================== */
+
+.contenedor-columnas {
+
+  display: flex;
+
+  gap: 30px; /* Deja una separación cómoda de 30px entre las columnas */
+
+}
+
+
+
+/* Ambas columnas se reparten el espacio por igual (50% cada una) */
+
+.columna-izquierda, .columna-derecha {
+
+  flex: 1;
+
+  min-width: 0; /* Evita desbordamientos extraños de texto */
+
+}
+
+
+
+/* ==========================================
+
+   ESTILOS DE LOS COMPONENTES (Simplificados)
+
+   ========================================== */
+
+
+
+/* Buscador (Arriba, ocupando el 100%) */
+
+.search-input {
+
+  width: 100%;
+
+  padding: 12px;
+
+  font-size: 16px;
+
+  border: 2px solid #e1e4e8;
+
+  border-radius: 6px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+/* Formulario (Columna Izquierda) */
+
+.form-container {
+
+  background: #f9f9f9;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  border: 1px solid #e1e4e8;
+
+}
+
+
+
+.form-group {
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.form-group label {
+
+  display: block;
+
+  font-weight: bold;
+
+  margin-bottom: 5px;
+
+}
+
+
+
+.form-control {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.error-message {
+
+  color: red;
+
+  font-size: 13px;
+
+  margin-top: 5px;
+
+  display: block;
+
+}
+
+
+
+/* Botones */
+
+.btn-submit {
+
+  background: #4a90e2;
+
+  color: white;
+
+  border: none;
+
+  width: 100%;
+
+  padding: 12px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+
+}
+
+
+
+.btn-submit:hover {
+
+  background: #357abd;
+
+}
+
+
+
+.btn {
+
+  padding: 6px 12px;
+
+  margin-left: 5px;
+
+  cursor: pointer;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  background: white;
+
+}
+
+
+
+/* Lista de Contactos (Columna Derecha) */
+
+.contact-item {
+
+  border: 1px solid #ddd;
+
+  padding: 15px;
+
+  margin-bottom: 10px;
+
+  border-radius: 6px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #ffffff;
+
+}
+
+
+
+.contact-item p {
+
+  margin: 4px 0;
+
+} 
+
